@@ -214,6 +214,27 @@ public class MyppApplication {
 
 }
 
-##-----------------------------------------------
+##------------------------------ properties-----------------
+
+spring.datasource.packagesToScan=com.bhumi
+
+# MySQL jdbc connection url.
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb?useLegacyDatetimeCode=false&serverTimezone=UTC
+
+# MySQL jdbc driver class name.
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+# MySQL database username and password
+spring.datasource.username=root
+#spring.datasource.password=root
+
+## Hibernate Properties
+# The SQL dialect makes Hibernate generate better SQL for the chosen database
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+
+# Hibernate ddl auto (create, create-drop, validate, update)
+spring.jpa.hibernate.ddl-auto = create
+
+spring.jpa.generate-ddl=true
+spring.jpa.hibernate.ddl-auto = create
 
 
